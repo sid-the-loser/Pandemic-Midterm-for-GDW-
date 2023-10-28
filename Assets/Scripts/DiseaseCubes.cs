@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class DiseaseCubes : MonoBehaviour
@@ -15,7 +16,6 @@ public class DiseaseCubes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
 }

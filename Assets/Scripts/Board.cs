@@ -12,6 +12,9 @@ public class Board : MonoBehaviour
     GameObject particle;
     int currentPlayerID;
     public static Dictionary<string, GameObject> _positionMarkers = new Dictionary<string, GameObject>();
+    public static List<string> _positionNames = new List<string>();
+
+    bool turnOneDone = false;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +57,7 @@ public class Board : MonoBehaviour
                 {
                     particle.SetActive (true);
                     disease.SetActive(false);
+                    turnOneDone = true;
                 }
             }
         } 

@@ -7,5 +7,6 @@ public class PositionMarkers : MonoBehaviour
     void Start()
     {
         Board._positionMarkers[this.name] = this.gameObject;
+        Board._positionNames.Add(this.name);
     }
 }
