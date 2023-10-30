@@ -49,7 +49,7 @@ public class Board : MonoBehaviour
         {
             players[currentPlayerID].GetComponent<Player>().currentPosition = "Miami";
         }
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && !turnOneDone)
         {
             foreach (var disease in diseases)
             {
@@ -58,6 +58,7 @@ public class Board : MonoBehaviour
                     particle.SetActive (true);
                     disease.SetActive(false);
                     turnOneDone = true;
+                    break;
                 }
             }
         } 
